@@ -1,10 +1,10 @@
 def vowels
- puts " enter the string"
- vowels = "a e i o u"
- character=gets
-  if character.include?( "a e i o u")
-puts "vowel"
- else
-puts "not a vowel"
+ puts "enter the string"
+ vowels = [ "a","e","i","o","u"]
+ n = gets.chomp.lowercase
+ if (vowels.include?(n))
+ puts "vowels"
+else
+ puts "constant"
  end
  end
