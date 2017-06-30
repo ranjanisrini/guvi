@@ -1,19 +1,14 @@
-def prime_interval
- puts "enter the number"
-  n = gets.chomp.to_i
- a = gets.chomp.to_i
-for i in n..a do
-puts i
- end
-start = n
- primes = (n..a).to_a
- (n..a).each do |no|
-(n..no).each do |num|
-if (no % num == 0) && num !=no
- primes.delete(no)
-break
- end 
- end
+def prime
+  number = gets.chomp.to_i
+  start =gets.chomp.to_i
+ primes = (start..number).to_a
+  (start..number).each do |no|
+    (start..no).each do |num|
+      if ( no % num  == 0) && num != no
+        primes.delete(no)
+        break
+      end
+    end
+  end
+  primes
 end
- primes
- end
