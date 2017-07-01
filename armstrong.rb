@@ -13,3 +13,4 @@ new_num=n
     puts "non-Armstrong"
 end
 end
+
