@@ -4,8 +4,7 @@ min = gets.chomp.to_i
 puts "enter the max number"
 max = gets.chomp.to_i
 for i in (min+1)..max do
-if(i%2!=0)
-puts i
+puts i if i.odd?
 end 
 end
 end
