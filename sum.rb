@@ -1,11 +1,10 @@
-n='a'
-until n == n.to_i.to_s && n.to_i > 0
-  puts "Enter the Natural number"
-  n = gets.chomp().strip()
+def sum
+  puts "Enter first number: "
+first = gets.to_i
+puts "Enter second number: "
+second = gets.to_i
+total = 0
+for i in (first..second) do
+  total += i
 end
-n=n.to_i
-sum=0
-for i in (1..n) 
-sum+=i
-end
-puts "Sum of first #{n} natural numbers is #{sum}"
+puts total
