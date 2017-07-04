@@ -7,4 +7,3 @@ for i in (min+1)..max do
 puts i if i.odd?
 end 
 end
-end
