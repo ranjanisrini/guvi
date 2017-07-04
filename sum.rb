@@ -8,3 +8,5 @@ for i in (first..second) do
   total += i
 end
 puts total
+end
+
